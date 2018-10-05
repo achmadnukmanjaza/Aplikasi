@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" focusTraversable="true" prefHeight="503.0" prefWidth="488.0" scaleShape="false" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cobaproyek1.FXMLDocumentController">
+    <children>
+      <Button id="Button confirm" fx:id="Button2" layoutX="142.0" layoutY="431.0" mnemonicParsing="false" onAction="#Klikkedua" onMouseClicked="#Klikkedua" prefHeight="30.0" prefWidth="92.0" text="Confirm">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label id="Label Peminjaman Buku" fx:id="judul" layoutX="142.0" layoutY="14.0" prefHeight="36.0" prefWidth="206.0" text="Peminjaman Buku " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label id="Label kelas" fx:id="lnama" layoutX="42.0" layoutY="141.0" prefHeight="17.0" prefWidth="92.0" text="Kelas" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField id="Textfiel" fx:id="editnama" layoutX="261.0" layoutY="170.0" prefHeight="25.0" prefWidth="198.0" />
+      <Label id="Label nama buku" fx:id="lalamat" layoutX="39.0" layoutY="338.0" text="Nama Buku" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField id="Textfiel" fx:id="editalamat" layoutX="261.0" layoutY="202.0" prefHeight="25.0" prefWidth="198.0" />
+      <Label id="Label nama peminjam" fx:id="Lberat" layoutX="41.0" layoutY="109.0" text="Nama Peminjam" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField id="Textfiell" layoutX="260.0" layoutY="106.0" prefHeight="25.0" prefWidth="198.0" />
+      <Label id="Label no absen" fx:id="LTelepon" layoutX="42.0" layoutY="175.0" text="No Absen" textFill="WHITE" />
+      <TextField id="Textfiel" fx:id="edittelepon" layoutX="260.0" layoutY="138.0" prefHeight="25.0" prefWidth="198.0" />
+      <Label id="Label Nomer telefon" fx:id="LPaket" layoutX="41.0" layoutY="211.0" text="Nomer Telefon" textFill="WHITE" />
+      <RadioButton id="Radionbutton" fx:id="rdCK" layoutX="329.0" layoutY="299.0" mnemonicParsing="false" text="Majalah" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="PilihanPaket" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton id="Radionbutton" fx:id="rdCKS" layoutX="405.0" layoutY="299.0" mnemonicParsing="false" text="Buku Mapel" textFill="WHITE" toggleGroup="$PilihanPaket" />
+      <RadioButton id="Radionbutton" fx:id="rdS" layoutX="261.0" layoutY="299.0" mnemonicParsing="false" text="Novel" textFill="WHITE" toggleGroup="$PilihanPaket" />
+      <Button id="Button cancle" fx:id="ButtonHapus" layoutX="267.0" layoutY="431.0" mnemonicParsing="false" onAction="#hapusIsian" prefHeight="30.0" prefWidth="92.0" text="Cancle">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label id="Label Jenis Buku" fx:id="Ltanggal" layoutX="42.0" layoutY="298.0" text="Jenis Buku" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField id="Textfiel" fx:id="edittanggal" layoutX="260.0" layoutY="335.0" prefHeight="25.0" prefWidth="198.0" />
+      <Label id="Label Informasi Peminjam" layoutX="39.0" layoutY="68.0" text="-----  Informasi Peminjam  -----" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label id="Label Informasi Buku" layoutX="39.0" layoutY="263.0" text="-----  Informasi Buku  -----" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label id="Label tanggal pengembalian buku" layoutX="38.0" layoutY="375.0" text="Tanggal Pengembalian Buku" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField id="Textfiel" fx:id="edittanggal1" layoutX="261.0" layoutY="372.0" prefHeight="25.0" prefWidth="198.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>
